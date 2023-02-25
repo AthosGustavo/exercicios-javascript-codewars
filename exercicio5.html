@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            /*
+            EXERCÍCIO:Sua tarefa é escrever uma função que recebe uma string
+                    e retorna uma nova string com todas as vogais removidas.
+            */
+        
+            /*
+            Sinalizo uma variavel com nome string no parâmetro da função
+            se eu transforma essa string em array,terei varias formas de remover as vogais dela
+            transformo essa string em array através do método filter e guardo em uma A
+            faço um laço for e passo os seguintes parâmetros 
+
+            */
+
+        function retiraVogal(string){
+            let arrayDividePalavra = string.split('');
+            let arrayOut = [];
+            for(let contador = 0;contador < arrayDividePalavra.length;contador++){
+                if(arrayDividePalavra[contador] == "a"  ||
+                    arrayDividePalavra[contador] == "e" ||
+                    arrayDividePalavra[contador] == "i" ||
+                    arrayDividePalavra[contador] == "o" ||
+                    arrayDividePalavra[contador] == "u")
+                    {
+                    arrayDividePalavra.splice(contador,1);
+                }else {
+                    arrayOut.push(arrayDividePalavra[contador]);
+                }
+            }
+            console.log(arrayOut.push(arrayDividePalavra[contador]));
+            console.log(arrayOut.join(''));
+        }
+        retiraVogal("What are you, a communist?");
+        
+            
+
+
+    </script>
+    
+</body>
+</html>

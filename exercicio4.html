@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //EXERCÍCIO:CONTE QUANTAS VOGAIS TEM UMA STRING ATRAVÉS DE UMA FUNÇÃO
+        
+        //LÓGICA PARA RESOLVER O EXERCÍCIO
+            
+            // passo uma string no parâmetro de uma função
+            // dentro dessa função preciso contar o numero de vogais
+            // eu posso pegar essa string,transforma-la em array através do método split e guardar em uma variável
+            // uso essa variavel com o metodo filter e uso a função de callback
+            //dentro da função de callback monto as igualdades com o parâmetro vogal e as vogais que devem ser separadas em um novo array
+            //As vogais encontradas são separadas em outro array e eu peço ao console para imprimir o seu comprimento
+            //assim consigo achar a quantidade de vogais de uma string.
+
+
+       
+
+
+        function contaVogal(string) {
+            let arrayString = string.split('');
+            let arrayFilter = arrayString.filter(
+                (vogal) => vogal == "a"
+                    || vogal == "e" || vogal == "i" || vogal == "o" || vogal == "u"
+
+            )
+
+            console.log(arrayFilter.length);
+
+
+        }
+        contaVogal("paraguai");
+
+
+
+    </script>
+
+</body>
+
+</html>

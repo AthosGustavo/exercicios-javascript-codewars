@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+        // EXERCÍCIO 6: 
+        // Retorne a soma apenas dos valores positivos de um array
+        
+        const array = [-5, 10, 15, 20];
+        function somaPositivos(array){
+            let soma = 0;
+            for(let contador = 0;contador < array.length;contador++){
+                if(array[contador] < 0){
+                    soma = soma + 0;
+                }else{
+                    soma = soma + array[contador];
+
+                }
+            }
+            console.log(soma);
+        }somaPositivos(array);
+
+       
+
+
+    </script>
+
+</body>
+
+</html>

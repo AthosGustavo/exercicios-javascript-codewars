@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        //EXERCICIO 8
+        //CRIE UMA FUNÇÃO E RETORNE A QUANTIDADE DE TRUE'S NO ARRAY
+        
+        /*
+            Faço uma function que recebe como parâmetro um array
+            Dentro do escopo da function declaro a variavel acumulador
+                função que recebe array
+                variavel acumulador
+            faço um laço for e declaro nos seus parâmetros
+                variavel contador igual a 0
+                variavel menor que o tamanho do array
+                variavel mais mais
+            faço um if e else dentro do for
+                se o valor do índice for igual a true
+                    variavel acumulador recebe +1
+                se não,variavel acumulador recebe 0
+            no final retorno a variável acumulador
+        */
+
+        let array = [true, true, true, false,
+            true, true, true, true,
+            true, false, true, false,
+            true, false, false, true,
+            true, true, true, true,
+            false, false, true, true];
+
+        function contaOvelha(array) {
+            let acumulador = 0;
+            for (let contador = 0; contador < array.length; contador++) {
+                if (array[contador] == true) {
+                    acumulador++;
+                } else {
+                    acumulador = acumulador;
+                }
+            }
+            console.log(acumulador);
+        }
+        contaOvelha(array);
+
+    </script>
+
+</body>
+
+</html>

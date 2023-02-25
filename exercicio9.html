@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        
+        //RECEBA UMA SEQUÊNCIA DE NÚMEROS EM UM PARÂMETRO DE UMA FUNÇÃO NO FORMATO STRING
+        //E Dê COMO SAÍDA O MAIOR E O MENOR NÚMERO EM FORMATO DE STRING
+        
+        
+        function highAndLow(numeros){
+            let arrayNumeros = numeros.split(' ');
+            arrayNumeros.sort((a,b) =>{
+                if(a - b > 0)   return 1;
+                if(a - b < 0)   return -1;
+                return 0;
+            });
+            
+            let maior = arrayNumeros.pop(); 
+            let menor = arrayNumeros.shift();
+            
+            if(menor == undefined){
+                return(`${maior} ${maior}`);
+            }else{
+                return(`${maior} ${menor}`);
+            }
+
+
+            
+        
+        
+        }
+        highAndLow("5 2 9 7");
+       
+        
+                     
+
+    </script>
+    
+</body>
+</html>
